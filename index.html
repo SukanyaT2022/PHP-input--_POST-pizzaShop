@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="pizza.php" mothod="POST">
+      <h2>Pizza Shop</h2>
+      
+        <h2>Choose Pizza Crust</h2>
+        <!--we put name that all the same name so the user can choose only onne-->
+        <input type="radio" name="crust" value="Regular" />Regular Crust
+        <input type="radio" name="crust" value="Cheese" />Cheese Crust
+        <input type="radio" name="crust" value="Thin" />Thin Crust
+      
+
+  
+<h2>Choose your topping</h2>
+<!--check box allow user to pick one or many -
+    -we give the same name to check box we put [] ex top[]
+    that the different so mutiple value can be selected -->
+<input type="checkbox"  name="top[]" value="sausages" > Sausages
+<input type="checkbox"  name="top[]" value="morecheese" > More Cheese
+<input type="checkbox"  name="top[]" value="olive" > Olive
+      
+
+<h2>Quantitiy</h2>
+<input type="text" placeholder="Put Qty" name="qty">
+
+<h2>Pizza Size</h2><!--drop down option-->
+<select name="size">
+<option>Small</option>
+<option>Medium</option>
+<option>Large</option>
+</select>
+<br>
+<input type="submit" value="Submit">
+
+
+
+
+
+
+    </form>
+  </body>
+</html>
